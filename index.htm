@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li>
+            <a class="active" href="#hero" onclick="smooth('hero')">Home</a>
+          </li>
+
+          <li>
+            <a href="#container" onclick="smooth('Projects')">Projects</a>
+          </li>
+          <li>
+            <a href="#comment" onclick="smooth('Feedback')">Feedback</a>
+          </li>
+
+          <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="hero">
+      <div class="imgpart"><img src="img/photo_5190858665077367162_y.jpg" alt="" /></div>
+      <div class="tradepart">
+        <h2>I am Yerkebulan</h2>
+        <h1>
+          <span style="color: green">and I'm</span>
+          <span style="color: yellow">Software engineer</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          numquam maxime eligendi repellendus repudiandae maiores vero voluptate
+          placeat, quaerat id, dicta deserunt quo minus qui, neque dolorem fuga
+          omnis tempore.
+        </p>
+      </div>
+      <div class="modal">
+        <button class="button" id="button">
+          buy the roadmap
+        </button>
+        <span class="overlay"></span>
+
+      <div class="modal-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Completed</h2>
+        <h3>You have sucessfully downloaded all the source code files.</h3>
+
+        <div class="buttons">
+          <button class="close-btn">Ok, Close</button>
+          <button>Open File</button>
+      </div>
+    </section>
+
+    <section id="container">
+      <h2>Project Gallery</h2>
+
+      <input type="text" id="searchInput" placeholder="Search" />
+
+      <div class="gallery" id="gallery">
+        <div class="card" data-name="Calculator">
+          <img src="img/calculatorr.png" alt="Project A" />
+          <p>Calculator</p>
+        </div>
+        <div class="card" data-name="DataTime">
+          <img src="img/mark-sheet.png" alt="Project B" />
+          <p>Mark Sheet</p>
+        </div>
+        <div class="card" data-name="Notes">
+          <img src="img/data.png" alt="Project A" />
+          <p>Date and time</p>
+        </div>
+        <div class="card" data-name="List">
+          <img src="img/spisok.png" alt="Project A" />
+          <p>List</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="comment">
+      <h2 style="text-align: center;">Info</h2>
+
+    <div id="tabContainer">
+      <div id="buttonContainer">
+        <button onclick="showPanel(0,'#f44336')">Personal info</button>
+        <button onclick="showPanel(1,'#4caf50')">Graduations</button>
+        <button onclick="showPanel(2,'#2196f3')">Roadmap</button>
+        <button onclick="showPanel(3,'#ff5722')">History</button>
+      </div>
+      <div id="tabPanel">My name is Yerkebulan, I am 25, I was born and brought up in Taraz, Kazakhstan <br> I sudied in common school, I used to do stupid and strange things like a lot of people <br> But I totally changed when I admitted to JIHC. </div>
+      <div id="tabPanel">
+        <ol>
+          <li>common school</li>
+          <li>JIHC</li>
+          <li>"MGU"</li>
+        </ol>
+      </div>
+      <div id="tabPanel">My first introduction was a 'HTMl and CSS', after i learned the python, then the graph and UX/UI design <br> At the end ofthe 2nd course I had the boost in the software development by using the C#</div>
+      <div id="tabPanel">I had never seen that I will be an developer of software. Thanks to my parents that said me about this college</div>
+    </div>
+
+
+    <footer>
+      <p>&copy; 2024 eshkere</p>
+    </footer>
+
+    <script src="uahaha.js"></script>
+  </body>
+</html>
