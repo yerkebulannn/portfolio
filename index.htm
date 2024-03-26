@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="header">
-      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
-      <div>
-        <ul id="navbar">
-          <li>
-            <a class="active" href="#hero" onclick="smooth('hero')">Home</a>
-          </li>
+      <header>
+      <nav class="nav">
+        <a href="/">
+          <img src="img/logo.png" alt="" class="logo">
+        </a>
 
-          <li>
-            <a href="#container" onclick="smooth('Projects')">Projects</a>
-          </li>
-          <li>
-            <a href="#comment" onclick="smooth('Feedback')">Feedback</a>
-          </li>
+        <div class="sidebar">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
 
-          <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
-        </ul>
-      </div>
-
-      <div id="mobile">
-        <i id="bar" class="fas fa-outdent"></i>
-      </div>
+        <div class="nav__link hide">
+          <a href="#hero">introduction</a>
+          <a href="#container">gallery</a>
+          <a href="#comment">info</a>
+          <button id="darkModeButton" class="button-1">Dark Mode</button>
+        </div>
+      </nav>
+    </header>
     </section>
 
     <section id="hero">
@@ -46,20 +45,7 @@
           omnis tempore.
         </p>
       </div>
-      <div class="modal">
-        <button class="button" id="button">
-          buy the roadmap
-        </button>
-        <span class="overlay"></span>
 
-      <div class="modal-box">
-        <i class="fa-regular fa-circle-check"></i>
-        <h2>Completed</h2>
-        <h3>You have sucessfully downloaded all the source code files.</h3>
-
-        <div class="buttons">
-          <button class="close-btn">Ok, Close</button>
-          <button>Open File</button>
       </div>
     </section>
 
@@ -94,10 +80,10 @@
 
     <div id="tabContainer">
       <div id="buttonContainer">
-        <button onclick="showPanel(0,'#f44336')">Personal info</button>
-        <button onclick="showPanel(1,'#4caf50')">Graduations</button>
-        <button onclick="showPanel(2,'#2196f3')">Roadmap</button>
-        <button onclick="showPanel(3,'#ff5722')">History</button>
+        <button onclick="showPanel(0,'#0077ff')">Personal info</button>
+        <button onclick="showPanel(1,'#0077ff')">Graduations</button>
+        <button onclick="showPanel(2,'#0077ff')">Roadmap</button>
+        <button onclick="showPanel(3,'#0077ff')">short video about myself</button>
       </div>
       <div id="tabPanel">My name is Yerkebulan, I am 25, I was born and brought up in Taraz, Kazakhstan <br> I sudied in common school, I used to do stupid and strange things like a lot of people <br> But I totally changed when I admitted to JIHC. </div>
       <div id="tabPanel">
@@ -108,14 +94,18 @@
         </ol>
       </div>
       <div id="tabPanel">My first introduction was a 'HTMl and CSS', after i learned the python, then the graph and UX/UI design <br> At the end ofthe 2nd course I had the boost in the software development by using the C#</div>
-      <div id="tabPanel">I had never seen that I will be an developer of software. Thanks to my parents that said me about this college</div>
+      <div id="tabPanel">
+        <video src="" class="my-video video-js" data-setup="{}" controls>
+          <source src="img/my-video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 
 
     <footer>
       <p>&copy; 2024 eshkere</p>
     </footer>
-
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="uahaha.js"></script>
   </body>
 </html>

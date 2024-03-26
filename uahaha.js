@@ -65,7 +65,7 @@ function showPanel(panelIndex, colorCode) {
   tabPanels[panelIndex].style.display = "block";
   tabPanels[panelIndex].style.backgroundColor = colorCode;
 }
-showPanel(0, "#f44336");
+showPanel(0, "#0077ff");
 
 const section = document.querySelector(".modal"),
   overlay = document.querySelector(".overlay"),
@@ -77,3 +77,24 @@ showBtn.addEventListener("click", () => section.classList.add("active"));
 overlay.addEventListener("click", () => section.classList.remove("active"));
 
 closeBtn.addEventListener("click", () => section.classList.remove("active"));
+
+document.querySelector(".ok").addEventListener("click", function () {
+  document.querySelector(".window").style.display = "flex";
+});
+
+document.querySelector(".ok").addEventListener("click", function () {
+  document.querySelector(".window").style.display = "none";
+});
+
+const sidebar = document.querySelector(".sidebar");
+const navLink = document.querySelector(".nav__link");
+
+sidebar.addEventListener("click", () => {
+  navLink.classList.toggle("hide");
+});
+
+const darkModeButton = document.getElementById("darkModeButton");
+
+darkModeButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
